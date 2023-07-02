@@ -10,15 +10,14 @@
 .pagination__item {
   font-size: 18px;
   font-weight: 400;
-  line-height: 38px;
+  line-height: 2.11em;
   min-width: 38px;
   text-align: center;
-  text-decoration-line: none;
-  opacity: 1;
-  transition: opacity 1s linear;
   transition: background-color 0.5s ease;
   cursor: pointer;
   border-radius: 19px;
+  border: 0;
+  background-color: transparent;
 }
 
 .pagination__item_active {
@@ -27,7 +26,6 @@
 }
 
 .pagination__item:hover {
-  opacity: 0.6;
   background-color: #d3d3d3;
   border-radius: 19px;
 }
@@ -36,18 +34,15 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  opacity: 1;
-  transition: opacity 1s linear;
   transition: background-color 0.5s ease;
   border-radius: 9999px;
   font-size: 18px;
   font-weight: 400;
-  line-height: 38px;
+  line-height: 2.11em;
   min-width: 80px;
 }
 
 .pagination__button:hover {
-  opacity: 0.6;
   background-color: #d3d3d3;
   border-radius: 9999px;
 }
