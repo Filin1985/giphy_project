@@ -1,11 +1,25 @@
 .header {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 40px 0 60px 0;
+}
+
+.header__logo {
+  height: 40px;
+  width: 40px;
 }
 
 .header__title {
   font-size: 54px;
   font-weight: 900;
   line-height: 1.07em;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .header__title {
+  font-size: 45px;
+  line-height: 1em;
+  }
 }

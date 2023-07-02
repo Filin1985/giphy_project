@@ -10,7 +10,7 @@ export function Input({handleChange}: TInputProps) {
     <input
       className={styles.input}
       type='text'
-      placeholder='Поле поиска'
+      placeholder='Search all the GIFs'
       onChange={handleChange}
     />
   )
