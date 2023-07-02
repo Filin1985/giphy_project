@@ -5,6 +5,7 @@ import { Search } from '../search/search'
 import { Navbar } from '../navbar/navbar'
 import styles from './app.module.css'
 import { Pagination } from '../pagination/pagination'
+import {Footer} from '../footer/footer'
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
       <Search />
       <Gallery />
       <Pagination />
+      <Footer />
     </div>
   )
 }
