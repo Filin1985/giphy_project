@@ -6,10 +6,10 @@ import {Input} from '../../shared/ui/input'
 
 export function Search() {
   return (
-    <main className={styles.content}>
+    <div className={styles.content}>
       <Input handleChange={() => {}} />
       <CloseButton handleClick={() => console.log('click')} />
       <SearchButton handleClick={() => console.log('click')} />
-    </main>
+    </div>
   )
 }
