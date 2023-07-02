@@ -10,9 +10,12 @@ export function Pagination({}) {
       >
         {'Previous'}
       </button>
-        <p className={styles.pagination__item}>
+      <button
+        className={styles.pagination__item}
+        type="button"
+      >
 1
-        </p>
+        </button>
         <button
         className={styles.pagination__button}
         type="button"

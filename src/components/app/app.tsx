@@ -26,6 +26,5 @@ export function App() {
         <Route path='/random' element={<Random />} />
       </Routes>
       <Pagination />
-    </main>
   )
 }
