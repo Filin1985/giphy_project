@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import styles from './gallery.module.css'
-import { Pagination } from '../pagination'
+import { Pagination } from '../../components/pagination'
+import { IGiph } from '../../shared/api'
 
 const PAGE_SIZE = 5
 
-export function Gallery({data}: any) {
+export function Gallery({data}: IGiph) {
+  console.log(data);
   const [currentPage, setCurrentPage] = useState(1)
   const [active, setActive] = useState(1)
   const [gifsPerPage] = useState(PAGE_SIZE)
@@ -36,7 +38,7 @@ export function Gallery({data}: any) {
   return (
     <div className={styles.gallery}>
       <ul className={styles.gifs__list}>
-        {currentGifs.map((item: any) => (
+        {currentGifs.map((item: IGiph) => (
           <li key={item.id}>
             <h3>{item.title}</h3>
             <img src={item.images.downsized.url} alt={item.title} />

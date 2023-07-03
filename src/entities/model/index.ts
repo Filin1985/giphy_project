@@ -1,9 +1,11 @@
 import {combine, createEffect, createStore, createEvent} from 'effector'
 import {getTrendingGifs, getRandomGif, getSearchedGif} from '../../shared/api'
+import { IResponse } from '../../shared/api'
+import { IGiph } from '../../shared/api'
 
-const $gifs = createStore([])
+const $gifs = createStore<IGiph[]>([])
 const $randomGif = createStore({})
-const $searchedGifs = createStore([])
+const $searchedGifs = createStore<IGiph[]>([])
 const $isGifsLoadingSuccess = createStore(false)
 const $isRandomGifLoadingSuccess = createStore(false)
 const $isSearchedGifLoadingSuccess = createStore(false)

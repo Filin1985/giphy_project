@@ -4,7 +4,7 @@ import styles from './gallery.module.css'
 import {mount, unmount} from './model'
 import {gifsModel} from '../../entities'
 import {useStore} from 'effector-react'
-import { Gallery } from '../gallery'
+import { Gallery } from '../../widgets/gallery'
 
 
 export function Trends() {
