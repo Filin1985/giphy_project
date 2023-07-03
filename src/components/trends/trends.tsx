@@ -1,17 +1,30 @@
-import { useState } from 'react'
-import { Header } from '../header'
+import {useEffect} from 'react'
+import Loader from '../loader/loader'
+import styles from './gallery.module.css'
+import {mount, unmount} from './model'
+import {gifsModel} from '../../entities'
+import {useStore} from 'effector-react'
 import { Gallery } from '../gallery'
-import { Navbar } from '../navbar/navbar'
-import styles from './trends.module.css'
-import { Pagination } from '../pagination/pagination'
 
-export function App() {
+
+export function Trends() {
+  const {data, isLoadingSuccess} = useStore(gifsModel.store.$gifsState)
+
+  useEffect(() => {
+    mount()
+
+    return () => {
+      unmount()
+    }
+  }, [])
+
+  if (!isLoadingSuccess) {
+    return <Loader />
+  }
+
+ 
+
   return (
-    <div className=''>
-      <Header />
-      <Navbar />
-      <Gallery />
-      <Pagination />
-    </div>
+     <Gallery data={data}/>
   )
 }

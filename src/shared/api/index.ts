@@ -23,7 +23,7 @@ export const getTrendingGifs = () => {
 }
 
 export const getRandomGif = () => {
-  return apiRequest<any>(`${API_URL}trending?api_key=${VITE_KEY}`, {
+  return apiRequest<any>(`${API_URL}random?api_key=${VITE_KEY}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json;charger=utf-8',
@@ -32,7 +32,7 @@ export const getRandomGif = () => {
 }
 
 export const getSearchedGif = (query: string) => {
-  return apiRequest<any>(`${API_URL}trending?api_key=${VITE_KEY}`, {
+  return apiRequest<any>(`${API_URL}search?q=${query}&api_key=${VITE_KEY}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json;charger=utf-8',

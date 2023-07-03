@@ -1,35 +1,58 @@
-import React, {useEffect} from 'react'
-import Loader from '../loader/loader'
+import { useState } from 'react'
 import styles from './gallery.module.css'
-import {mount, unmount} from './model'
-import {gifsModel} from '../../entities'
-import {useStore} from 'effector-react'
+import { Pagination } from '../pagination'
 
-export function Gallery() {
-  const {data, isLoadingSuccess} = useStore(gifsModel.store.$gifsState)
+const PAGE_SIZE = 5
 
-  useEffect(() => {
-    mount()
+export function Gallery({data}: any) {
+  const [currentPage, setCurrentPage] = useState(1)
+  const [active, setActive] = useState(1)
+  const [gifsPerPage] = useState(PAGE_SIZE)
 
-    return () => {
-      unmount()
+  const indexOfLastPost = currentPage * gifsPerPage
+  const indexOfFirstPost = indexOfLastPost - gifsPerPage
+
+  const currentGifs = data.slice(indexOfFirstPost, indexOfLastPost)
+
+  const paginate = (pageNumber: number) => {
+    setCurrentPage(pageNumber)
+    setActive(pageNumber)
+  }
+
+  const previousPage = () => {
+    if (currentPage !== 1) {
+      setCurrentPage(currentPage - 1)
+      paginate(currentPage - 1)
     }
-  }, [])
+  }
 
-  if (!isLoadingSuccess) {
-    return <Loader />
+  const nextPage = () => {
+    if (currentPage !== Math.ceil(data.length / gifsPerPage)) {
+      setCurrentPage(currentPage + 1)
+      paginate(currentPage + 1)
+    }
   }
 
   return (
     <div className={styles.gallery}>
       <ul className={styles.gifs__list}>
-        {data.map((item: any) => (
+        {currentGifs.map((item: any) => (
           <li key={item.id}>
             <h3>{item.title}</h3>
             <img src={item.images.downsized.url} alt={item.title} />
           </li>
         ))}
       </ul>
+      {data.length > 0 && (
+      <Pagination
+        gifsPerPage={gifsPerPage}
+        totalGifs={data.length}
+        paginate={paginate}
+        previousPage={previousPage}
+        nextPage={nextPage}
+        active={active}
+      />
+    )}
     </div>
   )
 }

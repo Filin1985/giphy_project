@@ -2,7 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
-  margin: 40px 0 60px 0;
+  margin: 40px 0 40px 0;
+  text-decoration: none;
+  color: #000;
 }
 
 .header__logo {
