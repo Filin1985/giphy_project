@@ -4,10 +4,8 @@ import styles from './random.module.css'
 import {mount, unmount} from './model'
 import {gifsModel} from '../../entities'
 import {useStore} from 'effector-react'
+import { IGiph } from '../../shared/api'
 
-export interface IGiph {
-  [key: string]: number | string | any;
-}
 
 interface IData {
   data: IGiph
