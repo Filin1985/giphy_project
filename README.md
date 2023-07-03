@@ -11,19 +11,22 @@
 - Flexbox
 - Grid
 - Responsive Design
-- Pixel Perfect
 - React
+- Effector
 - Vite
 
 ### Запуск проекта
 
-Устанавливаем зависимости
+1. Устанавливаем зависимости
 
 ```
 npm install
 ```
 
-Запускаем проект
+2. Создаем служебный файл на примере example.env. Ключ можем получить на сайте https://developers.giphy.com/
+
+
+3. Запускаем проект
 
 ```
 npm run dev
