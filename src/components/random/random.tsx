@@ -5,8 +5,17 @@ import {mount, unmount} from './model'
 import {gifsModel} from '../../entities'
 import {useStore} from 'effector-react'
 
+export interface IGiph {
+  [key: string]: number | string | any;
+}
+
+interface IData {
+  data: IGiph
+  isLoadingSuccess: boolean
+}
+
 export function Random() {
-  const {data, isLoadingSuccess}: any = useStore(
+  const {data, isLoadingSuccess}: IData = useStore(
     gifsModel.store.$randomGifState
   )
 

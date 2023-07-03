@@ -7,12 +7,12 @@ import {mount, unmount} from './model'
 import {useStore} from 'effector-react'
 import {gifsModel} from '../../entities'
 import Loader from '../loader/loader'
-import { Gallery } from '../gallery'
+import { Gallery } from '../../widgets/gallery'
 
 
 export function Search() {
   const [query, setQuery] = useState('')
-  const {data, isLoadingSuccess}: any = useStore(
+  const {data, isLoadingSuccess} = useStore(
     gifsModel.store.$searchedGifsState
   )
 
