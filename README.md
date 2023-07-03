@@ -11,8 +11,8 @@
 - Flexbox
 - Grid
 - Responsive Design
-- Pixel Perfect
 - React
+- Effector
 - Vite
 
 ### Запуск проекта
@@ -21,6 +21,12 @@
 
 ```
 npm install
+```
+
+Создать в корневой директории файл .env с ключом сайта https://developers.giphy.com/
+
+```
+VITE_GIPHY_KEY=apikeyhere
 ```
 
 Запускаем проект

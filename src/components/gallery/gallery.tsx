@@ -1,19 +1,22 @@
 import React, {useEffect} from 'react'
 import Loader from '../loader/loader'
 import styles from './gallery.module.css'
-import {mount} from './model'
+import {mount, unmount} from './model'
 import {gifsModel} from '../../entities'
 import {useStore} from 'effector-react'
 
 export function Gallery() {
-  const {data} = useStore(gifsModel.store.$gifsState)
+  const {data, isLoadingSuccess} = useStore(gifsModel.store.$gifsState)
 
   useEffect(() => {
-    console.log('object')
     mount()
+
+    return () => {
+      unmount()
+    }
   }, [])
 
-  if (data.length === 0) {
+  if (!isLoadingSuccess) {
     return <Loader />
   }
 

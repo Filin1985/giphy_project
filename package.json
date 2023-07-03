@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@giphy/js-fetch-api": "^5.0.0",
+    "classnames": "^2.3.2",
     "effector": "^22.8.6",
     "effector-react": "^22.5.3",
     "patronum": "^1.18.0",
