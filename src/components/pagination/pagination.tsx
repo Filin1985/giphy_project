@@ -1,4 +1,3 @@
-import cn from 'classnames'
 import {IconArrow} from '../../shared/icons/arroIcon/arrow-icon'
 import styles from './pagination.module.css'
 

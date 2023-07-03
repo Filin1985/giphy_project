@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__control {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 70px 0;
+}
