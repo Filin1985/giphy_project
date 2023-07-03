@@ -8,10 +8,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@giphy/js-fetch-api": "^5.0.0",
+    "classnames": "^2.3.2",
+    "effector": "^22.8.6",
+    "effector-react": "^22.5.3",
+    "patronum": "^1.18.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.14.1"
   },
   "devDependencies": {
+    "@types/node": "^20.3.3",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
