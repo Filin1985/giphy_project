@@ -1,15 +1,14 @@
 # Проект: Giphy
 
+![Снимок экрана 2023-07-04 в 22 33 15](https://github.com/Filin1985/giphy_project/assets/16574140/e6363544-92a5-4828-939e-8e902ff6f7f8)
+
 ### Описание проекта
 
 - Командный проект для участия в соревнованиях.
 
 ### Технологии
 
-[![React][React-badge]][React-url]
-[![Effector][Effector-badge]][Effector-url]
-[![Vite][Vite-badge]][Vite-url]
-[![React-Router][React-Router-badge]][React-Router-url]
+[![My Skills](https://skillicons.dev/icons?i=typescript,react,html,css)](https://skillicons.dev)
 
 ### Запуск проекта
 
