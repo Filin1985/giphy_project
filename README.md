@@ -5,7 +5,7 @@
 - Командный проект для участия в соревнованиях.
 
 ### Технологии
-[![My Skills](https://skillicons.dev/icons?i=typescript,react,html,css,wasm)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=typescript,react,effector,html,css)](https://skillicons.dev)
 
 
 ### Запуск проекта
