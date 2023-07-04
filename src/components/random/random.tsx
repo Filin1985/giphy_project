@@ -4,8 +4,7 @@ import styles from './random.module.css'
 import {mount, unmount} from './model'
 import {gifsModel} from '../../entities'
 import {useStore} from 'effector-react'
-import { IGiph } from '../../shared/api'
-
+import {IGiph} from '../../shared/api'
 
 interface IData {
   data: IGiph
@@ -34,7 +33,11 @@ export function Random() {
       {Object.keys(data).length !== 0 && (
         <div className={styles.content}>
           <h3>{data.title}</h3>
-          <img src={data.images.downsized.url} alt={data.title} />
+          <img
+            className={styles.content__image}
+            src={data.images.downsized.url}
+            alt={data.title}
+          />
         </div>
       )}
     </>

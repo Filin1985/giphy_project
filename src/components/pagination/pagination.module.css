@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   list-style-type: none;
-  width: 100%;
-  max-width: 961px;
+  margin-top: 50px;
+  padding: 0;
 }
 
 .container__item {
