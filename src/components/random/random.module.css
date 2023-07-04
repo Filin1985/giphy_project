@@ -1,11 +1,36 @@
 .content {
-  display: flex;
-  flex-direction: column;
-}
-
-.content__control {
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0 0 70px 0;
+}
+
+.content__image {
+  width: 50vw;
+  height: 50vw;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 936px) {
+  .content__image {
+    width: 55vw;
+    height: 55vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content__image {
+    width: 60vw;
+    height: 60vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .gifs__image {
+    width: 65vw;
+    height: 65vw;
+  }
 }
