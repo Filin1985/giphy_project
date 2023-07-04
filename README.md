@@ -4,16 +4,11 @@
 
 - Командный проект для участия в соревнованиях.
 
-**Используемые технологии**
-
-- HTML
-- CSS
-- Flexbox
-- Grid
-- Responsive Design
-- React
-- Effector
-- Vite
+### Технологии
+[![React][React-badge]][React-url]
+[![Effector][Effector-badge]][Effector-url]
+[![Vite][Vite-badge]][Vite-url]
+[![React-Router][React-Router-badge]][React-Router-url]
 
 ### Запуск проекта
 
