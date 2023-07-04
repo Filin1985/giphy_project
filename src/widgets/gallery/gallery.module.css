@@ -47,14 +47,18 @@
 
 @media screen and (max-width: 600px) {
   .gifs__image {
-    width: 30vw;
-    height: 30vw;
+    width: 35vw;
+    height: 35vw;
   }
 }
 
 @media screen and (max-width: 450px) {
+  .gifs__list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
   .gifs__image {
-    width: 33vw;
-    height: 33vw;
+    width: 50vw;
+    height: 50vw;
   }
 }
