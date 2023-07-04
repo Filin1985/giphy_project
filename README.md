@@ -5,7 +5,6 @@
 - Командный проект для участия в соревнованиях.
 
 ### Технологии
-
 [![React][React-badge]][React-url]
 [![Effector][Effector-badge]][Effector-url]
 [![Vite][Vite-badge]][Vite-url]
