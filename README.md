@@ -5,10 +5,12 @@
 - Командный проект для участия в соревнованиях.
 
 ### Технологии
-[![React][React-badge]][React-url]
-[![Effector][Effector-badge]][Effector-url]
-[![Vite][Vite-badge]][Vite-url]
-[![React-Router][React-Router-badge]][React-Router-url]
+<a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" alt="html5-plain" width="40" height="40"/>  
+</a>
+ <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg" alt="css3-plain" width="40" height="40"/>  
+</a>
+ <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg" alt="typescript-plain" width="40" height="40"/>  
+</a>
 
 ### Запуск проекта
 
