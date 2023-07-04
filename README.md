@@ -20,7 +20,6 @@ npm install
 
 2. Создаем служебный файл на примере example.env. Ключ можем получить на сайте https://developers.giphy.com/
 
-
 3. Запускаем проект
 
 ```
