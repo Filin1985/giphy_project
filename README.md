@@ -5,9 +5,8 @@
 - Командный проект для участия в соревнованиях.
 
 ### Технологии
-<p align="left"> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> [![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
- 
-</p>
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
+
 
 ### Запуск проекта
 
