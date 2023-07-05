@@ -1,5 +1,6 @@
 # Проект: Giphy
-![Снимок экрана 2023-07-04 в 22 33 15](https://github.com/Filin1985/giphy_project/assets/16574140/e6363544-92a5-4828-939e-8e902ff6f7f8)
+![Снимок экрана 2023-07-04 в 22 33 15](https://github.com/Filin1985/giphy_project/assets/16574140/e8f76c51-0fd5-4790-81a2-743ad3a9c498)
+
 
 
 ### Описание проекта
